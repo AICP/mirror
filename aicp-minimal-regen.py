@@ -11,20 +11,20 @@ except ImportError:
     sys.exit("Please install the GitPython package via pip3")
 
 # Clone (or update) the repository
-if os.path.isdir("lineage_manifest"):
-    print("Updating lineage_manifest repository...")
-    lineage_manifest = git.Repo("lineage_manifest")
-    lineage_manifest.remote("origin").fetch()
+if os.path.isdir("aicp_manifest"):
+    print("Updating aicp_manifest repository...")
+    aicp_manifest = git.Repo("aicp_manifest")
+    aicp_manifest.remote("origin").fetch()
 else:
-    print("Downloading lineage_manifest repository...")
-    lineage_manifest = git.Repo.clone_from(
-        "https://github.com/LineageOS/android", "lineage_manifest"
+    print("Downloading aicp_manifest repository...")
+    aicp_manifest = git.Repo.clone_from(
+        "https://github.com/AICP/platform_manifest", "aicp_manifest"
     )
 
 # Get all the refs
 refs = [
     re.search(r"remotes/(\S+)", tag).group(1)
-    for tag in lineage_manifest.git.branch(a=True).splitlines()
+    for tag in aicp_manifest.git.branch(a=True).splitlines()
     if "remotes/" in tag
 ]
 
@@ -41,7 +41,7 @@ for index, ref in enumerate(refs, 1):
         xml_name = xml_todo.pop(0)
         print("  - {}".format(xml_name))
 
-        xml = ET.fromstring(lineage_manifest.git.show("{}:{}".format(ref, xml_name)))
+        xml = ET.fromstring(aicp_manifest.git.show("{}:{}".format(ref, xml_name)))
 
         for child in xml:
             if child.tag == "include":
@@ -52,14 +52,14 @@ for index, ref in enumerate(refs, 1):
             if child.tag != "project":
                 continue
 
-            # Ignore non-Lineage projects
-            if not child.attrib["name"].startswith("LineageOS/"):
+            # Ignore non-aicp projects
+            if not child.attrib["name"].startswith("AICP/"):
                 continue
 
             repos.add(child.attrib["name"].rstrip("/"))
 
 
-file = open("lineage-minimal.xml", "w")
+file = open("aicp-minimal.xml", "w")
 file.write('<?xml version="1.0" encoding="UTF-8"?>\n')
 file.write("<manifest>\n")
 file.write("\n")
