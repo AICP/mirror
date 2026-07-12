@@ -208,11 +208,13 @@
   <project name="AICP/device_oneplus_oneplus3" />
   <project name="AICP/device_oneplus_oneplus3t" />
   <project name="AICP/device_oneplus_onyx" />
+  <project name="AICP/device_oneplus_salami" />
   <project name="AICP/device_oneplus_sdm845-common" />
   <project name="AICP/device_oneplus_settings" />
   <project name="AICP/device_oneplus_sm8150-common" />
   <project name="AICP/device_oneplus_sm8250-common" />
   <project name="AICP/device_oneplus_sm8350-common" />
+  <project name="AICP/device_oneplus_sm8550-common" />
   <project name="AICP/device_oneplus_sm8750-common" />
   <project name="AICP/device_oppo_apq8064-common" />
   <project name="AICP/device_oppo_common" />
