@@ -64,8 +64,11 @@
   <project name="AICP/device_google_muskie" />
   <project name="AICP/device_google_mustang" />
   <project name="AICP/device_google_muzel" />
+  <project name="AICP/device_google_oriole" />
   <project name="AICP/device_google_pantah" />
   <project name="AICP/device_google_panther" />
+  <project name="AICP/device_google_raven" />
+  <project name="AICP/device_google_raviole" />
   <project name="AICP/device_google_redbull" />
   <project name="AICP/device_google_redfin" />
   <project name="AICP/device_google_sailfish" />
@@ -543,6 +546,7 @@
   <project name="AICP/packages_apps_Calculator" />
   <project name="AICP/packages_apps_Calendar" />
   <project name="AICP/packages_apps_Camera2" />
+  <project name="AICP/packages_apps_ColumbusService" />
   <project name="AICP/packages_apps_Contacts" />
   <project name="AICP/packages_apps_ContactsCommon" />
   <project name="AICP/packages_apps_DSPManager" />
