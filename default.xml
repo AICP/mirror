@@ -53,11 +53,14 @@
   <project name="AICP/device_google_barbet" />
   <project name="AICP/device_google_blazer" />
   <project name="AICP/device_google_bonito" />
+  <project name="AICP/device_google_caiman" />
+  <project name="AICP/device_google_caimito" />
   <project name="AICP/device_google_cheetah" />
   <project name="AICP/device_google_crosshatch" />
   <project name="AICP/device_google_crosshatch-sepolicy" />
   <project name="AICP/device_google_frankel" />
   <project name="AICP/device_google_husky" />
+  <project name="AICP/device_google_komodo" />
   <project name="AICP/device_google_marlin" />
   <project name="AICP/device_google_msm8916-common" />
   <project name="AICP/device_google_msm8952-common" />
@@ -80,8 +83,10 @@
   <project name="AICP/device_google_sprout-common" />
   <project name="AICP/device_google_sprout4" />
   <project name="AICP/device_google_taimen" />
+  <project name="AICP/device_google_tokay" />
   <project name="AICP/device_google_wahoo" />
   <project name="AICP/device_google_walleye" />
+  <project name="AICP/device_google_zumapro" />
   <project name="AICP/device_htc_endeavoru" />
   <project name="AICP/device_htc_flounder" />
   <project name="AICP/device_htc_hima" />
