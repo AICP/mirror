@@ -50,6 +50,7 @@
   <project name="AICP/device_cyanogen_msm8916-common" />
   <project name="AICP/device_essential_mata" />
   <project name="AICP/device_fxtec_pro1" />
+  <project name="AICP/device_google_akita" />
   <project name="AICP/device_google_barbet" />
   <project name="AICP/device_google_blazer" />
   <project name="AICP/device_google_bonito" />
